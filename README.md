@@ -1,13 +1,11 @@
 # MyFirst Wordpress Theme
-This is a public version of my first wordpress theme ever build, and describes my journey of getting into programming and WordPress. 
+This is a public version of my first wordpress theme ever build (which can be obviously seen in the code), and describes my journey of getting into programming and WordPress. Now it is freely available for downloads!
 
-Welcome to the HTLM 5 M-Sign Theme by Michiel from www.m-sign.nl
-
-##Theme Include
+##Theme Includes
 * Fully HTML 5, and CSS3 enhancements for navigation.
 * Responsive for different devices, responsive dropdown menu for resolutions under 640px.
 * Comptabible with Chrome, Firefox, Internet Explorer 8+, Opera, Safari
-* Dublin Core Meta tags and semantic schemes (microdata and microschemes), improving SEO. 
+* Semantic schemes (microdata and microschemes)
 * Jquery Slider, small and largeversion
 * Additional Sidebars for footer and pages
 * Custom Content Type for Slider, items in slider are handles as a different post.
@@ -51,3 +49,13 @@ otherwhise they will be cropped automatically.
 * When switching themes, the data from custom post types and metaboxes will be still in the database, but will not appear in your dashboard anymore.
 * When entering urls for example slider images, please fill in the complete url including http://.
 * Most javascripts are entered in one single file, functions.js
+
+##Documentation
+
+### Themesettings
+
+### Metaboxes
+
+### Custom Widgets
+
+### File Structures
