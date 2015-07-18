@@ -49,7 +49,7 @@ otherwhise they will be cropped automatically.
 * When entering urls for example slider images, please fill in the complete url including http://.
 * Most javascripts are entered in one single file, functions.js
 
-##Documentation
+##Brief Documentation
 
 ### Making Connections
 If you install the [posts 2 posts plugin](https://wordpress.org/plugins/posts-to-posts/ "Post 2 Posts"), you can add connections. At portfolio projects, you can link to services (you can use this to affiliate a certain project with some services) and at pages, posts, services and portfolio projects you can link to custom widgets. 
