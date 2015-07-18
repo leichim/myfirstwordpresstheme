@@ -657,4 +657,4 @@ $options = array (
                "type" 	=> "tabclose",),											 		  																					
 );
 /* Create the class */
-$settings_page = new msign_ThemeOptions($tabs, $options, 'M-Sign', '1.5');
+$settings_page = new msign_ThemeOptions($tabs, $options, 'My First', '1.0');
