@@ -85,13 +85,13 @@ noscript strong {
 	font-family: 'SourceSansProItalic';
   	font-style: italic;
   	font-weight: 300;
-  	src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/fpTVHK8qsXbIeTHTrnQH6GGomRtBD2u8FwSY4jjlmeA.woff) format('woff');
+  	src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'), url(//themes.googleusercontent.com/static/fonts/sourcesanspro/v5/fpTVHK8qsXbIeTHTrnQH6GGomRtBD2u8FwSY4jjlmeA.woff) format('woff');
 }
 @font-face {
 	font-family: 'SourceSansPro';
 	font-style: normal;
 	font-weight: 300;
-	src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
+	src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(//themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
 }
 /* 3. Fonts and Globals
 -------------------------------------------------------------- */
@@ -923,7 +923,7 @@ h3.blogintro {
 	float:left;
 }
 .one-column .approach-content {
-	width:270px;
+	width:269px;
 }
 .approach .entry-header {
 	color:#F23183;
@@ -1354,7 +1354,6 @@ a.view.magenta {
 	padding: 5px 11px;
 }
 .dlbutton.normal a.view {
-	border-radius: 22px;
 	padding: 12px 22px;
 	font-size:22px;
 }
@@ -1364,7 +1363,10 @@ a.view.magenta {
 	font-size:27px;
 }
 .dlbutton.squared a.view {
-	border-radius:none;
+	border-radius: 0;
+}
+.dlbutton.rounded a.view {
+	border-radius: 22px;
 }
 /*
 Pullquotes (made active by using the [pull][/pull] shortcode)
@@ -2047,6 +2049,9 @@ Content Post Navigation
 	.wp-caption-text {
 		margin-left:0;
 	}
+    .flexslider.portfolio {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 660px) {
 	#iconplacer {
@@ -2149,6 +2154,9 @@ Content Post Navigation
 		padding:0;
 		text-align:center;
 	}
+    .flexslider.portfolio img {
+        min-width: inherit;
+    }
 }
 /* 12. Additional styles [for functioning of plug-ins] 
 -------------------------------------------------------------- */

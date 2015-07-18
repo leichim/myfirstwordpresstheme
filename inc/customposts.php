@@ -32,22 +32,23 @@ function create_post_type_feature() {
 	register_post_type( 'feature',
 		array(
 			'labels' => array(
-				'name' => __( 'Slider Items', 'msign'),
-				'menu_name' => __( 'Slider Items', 'msign'),		
-				'singular_name' => __('Slider Item', 'msign'),
+				'name' => __( 'Slides', 'msign'),
+				'menu_name' => __( 'Slides', 'msign'),		
+				'singular_name' => __('Slide', 'msign'),
 				'add_new' => __('Add New', 'msign_feature', 'msign'),
-				'add_new_item' => __('Add New Slider Item', 'msign'),
-				'edit_item' => __('Edit Slider Item', 'msign'),
-				'new_item' => __('New Slider Item', 'msign'),
-				'all_items' => __('All Slider Items', 'msign'),
-				'view_item' => __('View Slider Item', 'msign'),
-				'search_items' => __('Search Slider Items', 'msign'),
-				'not_found' =>  __('No Slider Items found', 'msign'),
-				'not_found_in_trash' => __('No Slider Items found in Trash', 'msign'), 
+				'add_new_item' => __('Add New Slide', 'msign'),
+				'edit_item' => __('Edit Slide', 'msign'),
+				'new_item' => __('New Slide', 'msign'),
+				'all_items' => __('All Slides', 'msign'),
+				'view_item' => __('View Slide', 'msign'),
+				'search_items' => __('Search Slides', 'msign'),
+				'not_found' =>  __('No Slides found', 'msign'),
+				'not_found_in_trash' => __('No Slides found in Trash', 'msign'), 
 			),
         'menu_icon' => '', 
 		'description' => __('These custom posts will appear in your slider on the frontpage. Use the title and editor to add a title and description that is showed in the sliders caption.', 'msign'),
 		'public' => false,
+        'show_ui' => true,
 		'has_archive' => false,
 		'show_in_nav_menus' => false,
 		'exclude_from_search' => true,
@@ -107,6 +108,7 @@ function create_post_type_testimonies() {
 		'description' => __('These custom posts will appear on the Clients page template and on the homepage. These posts allow you to add clients and testimonies', 'msign'),
 		'public' => false,
 		'has_archive' => false,
+        'show_ui' => true,
 		'show_in_nav_menus' => false,
 		'exclude_from_search' => true,
 		'supports' => array('editor', 'excerpt', 'thumbnail','title'),
@@ -137,6 +139,7 @@ function create_post_type_members() {
 		'description' => __('These custom posts will appear on the members page template and about us page template.', 'msign'),
 		'public' => false,
 		'has_archive' => false,
+        'show_ui' => true,
 		'show_in_nav_menus' => false,
 		'exclude_from_search' => true,
 		'supports' => array('editor', 'thumbnail','title'),
@@ -167,6 +170,7 @@ function create_post_type_approach() {
 		'description' => __('These custom posts can be used to describe a certain work approach of your activities.', 'msign'),
 		'public' => false,
 		'has_archive' => false,
+        'show_ui' => true,
 		'supports' => array('editor', 'thumbnail','title'),
 		'rewrite' => array('with_front' => false, 'slug'=>'workapproach')
 		)
@@ -193,6 +197,7 @@ function create_post_type_widget() {
         'menu_icon' => '',     
 		'description' => __('These custom post type can be used to store custom widgets', 'msign'),
 		'public' => false,
+        'show_ui' => true,
 		'has_archive' => false,
 		'supports' => array('editor', 'thumbnail','title'),
 		'rewrite' => array('with_front' => false, 'slug'=>'custom-widget')
@@ -229,17 +234,17 @@ function feature_updated_messages( $messages ) {
         global $post, $post_ID;
         $messages['feature'] = array(
                 0 => '', // Unused. Messages start at index 1.
-                1 => __('Slider item edited.', 'msign'),
+                1 => __('Slide edited.', 'msign'),
                 2 => __('Custom field edited.', 'msign'),
                 3 => __('Custom field deleted.', 'msign'),
-                4 => __('Slider item edited.', 'msign'), 
-                5 => isset($_GET['revision']) ? sprintf( __('Slider item restored to revision of %s', 'msign'), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
-                6 => __('Slider item published.', 'msign'),
-                7 => __('Slider item saved.', 'msign'),
-                8 => __('Slider item submitted.', 'msign'),
-                9 => sprintf( __('Slider item planned for: <strong>%1$s</strong>.', 'msign'),
+                4 => __('Slide edited.', 'msign'), 
+                5 => isset($_GET['revision']) ? sprintf( __('Slide restored to revision of %s', 'msign'), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
+                6 => __('Slide published.', 'msign'),
+                7 => __('Slide saved.', 'msign'),
+                8 => __('Slide submitted.', 'msign'),
+                9 => sprintf( __('Slide planned for: <strong>%1$s</strong>.', 'msign'),
                 date_i18n( __( 'M j, Y @ G:i', 'msign' ), strtotime( $post->post_date ) ), esc_url( get_permalink($post_ID) ) ),
-                10 => __('Draft for slider item edited.', 'msign')
+                10 => __('Draft for Slide edited.', 'msign')
         );
         return $messages;
 }

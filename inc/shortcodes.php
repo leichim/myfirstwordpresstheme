@@ -8,9 +8,11 @@ function download_shortcode( $atts, $content = null ) {
         "url" => '',
         "title" => __('Download','msign'),
         "target" => '_blank',
-		"class" => 'normal',
+		"class" => '',
+        "size" => 'normal',
+        "roundness" => 'rounded',
 ), $atts));
-   return '<div class="dlbutton-container"><a class="no-transition '.$class.'" href="'.$url.'" title="'.$title.'" target="'.$target.'">' . $content . '</a></div>';
+   return '<div class="dlbutton ' . $size . ' ' . $roundness . '"><a class="no-transition view '.$class.'" href="'.$url.'" title="'.$title.'" target="'.$target.'">' . $content . '</a></div>';
 }
 add_shortcode( 'dlbutton' , 'download_shortcode');
 /* Shortcode for Adsense */
