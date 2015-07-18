@@ -28,7 +28,7 @@ and as thumbnail in archives, category archives, tag archives, author archives, 
 * Custom widget for displaying recent news
 
 * Custom Shortcodes for displaying: 
-	* A download / view button with different colors (normal, red or green) [dlbutton url="url.com" class="normal"]Button Title[/dlbutton]
+	* A download / view button with different colors (normal, red or green) [dlbutton url="url.com" class="normal"]Button Title[/dlbutton]. The class can be input with a certain color. You can also add the attributes size="normal" (accepts normal, large and small) and roundness="squared" to make the button squared.
 	* A box shortcode with different colors: red, green, purple, yellow, blue or neutral [box  class="blue"]Colored Box[/box].
 	* 3 Different ads inserted in the theme settings panel [adsense1] [adsense2] [adsense3]
 	* Columns (2/3/4): 
