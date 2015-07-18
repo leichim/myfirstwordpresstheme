@@ -27,18 +27,7 @@ and as thumbnail in archives, category archives, tag archives, author archives, 
 * Custom widget for displaying featured posts
 * Custom widget for displaying recent news
 
-* Custom Shortcodes for displaying: 
-	* A download / view button with different colors (normal, red or green) [dlbutton url="url.com" class="normal"]Button Title[/dlbutton]. The class can be input with a certain color. You can also add the attributes size="normal" (accepts normal, large and small), target="_blank" (accepts _blank, _new and _self) and roundness="squared" to make the button squared.
-	* A box shortcode with different colors: red, green, purple, yellow, blue or neutral [box  class="blue"]Colored Box[/box].
-	* 3 Different ads inserted in the theme settings panel [adsense1] [adsense2] [adsense3]
-	* Columns (2/3/4): 
-		- [column class="two"]Content[/column] [column class="two-last"]Content[/column],
-		- [column class="three"]Content[/column] [column class="three"]Content[/column] [column class="three-last"]Content[/column]
-		- [column class="four"]Content[/column] [column class="four"]Content[/column] [column class="four"]Content[/column] [column class="four-last"]Content[/column]
-		- other possible classes: two-thirds, two-thirds-last, three-fourth, three-fourth-last. 
-	* Pullquotes [pull class="left"]Quote here[/pull]
-	* [twitter] for displaying twitter following button
-	
+* Custom Shortcodes for displaying buttons, boxes, ads, columns, pullquotes and a twitter follow button: 
 * Theme Settings page with settings for Analytics and ad management as well: 
 
 ## Recommended Knowledge
@@ -93,6 +82,18 @@ For some custom content types, you have additional metaboxes you can fill in:
 * Projects: fields for displaying client info and project links
 * Members: fields for displaying the member role and his social profiles
 * Slides: the caption, title and background for the slide, and a possible video. 
+
+### Displaying Shortcodes
+* A download / view button with different colors (normal, red or green) [dlbutton url="url.com" class="normal"]Button Title[/dlbutton]. The class can be input with a certain color. You can also add the attributes size="normal" (accepts normal, large and small), target="_blank" (accepts _blank, _new and _self) and roundness="squared" to make the button squared.
+* A box shortcode with different colors: red, green, purple, yellow, blue or neutral [box  class="blue"]Colored Box[/box].
+* 3 Different ads inserted in the theme settings panel [adsense1] [adsense2] [adsense3]
+* Columns (2/3/4): 
+	- [column class="two"]Content[/column] [column class="two-last"]Content[/column],
+	- [column class="three"]Content[/column] [column class="three"]Content[/column] [column class="three-last"]Content[/column]
+	- [column class="four"]Content[/column] [column class="four"]Content[/column] [column class="four"]Content[/column] [column class="four-last"]Content[/column]
+	- other possible classes: two-thirds, two-thirds-last, three-fourth, three-fourth-last. 
+* Pullquotes [pull class="left"]Quote here[/pull]
+* [twitter] for displaying twitter following button
 
 ### File Structures
 * All theme template files are placed in the root folder of the theme
