@@ -3,7 +3,7 @@ This is a public version of my first wordpress theme ever build, and describes m
 
 Welcome to the HTLM 5 M-Sign Theme by Michiel from www.m-sign.nl
 
-|Theme Includes|
+##Theme Include
 * Fully HTML 5, and CSS3 enhancements for navigation.
 * Responsive for different devices, responsive dropdown menu for resolutions under 640px.
 * Comptabible with Chrome, Firefox, Internet Explorer 8+, Opera, Safari
@@ -44,7 +44,7 @@ and as thumbnail in archives, category archives, tag archives, author archives, 
 	
 * Theme Settings page with settings for Analytics and ad management as well: 
 
-| Recommended Knowledge |
+## Recommended Knowledge
 * Recommended size for small images in the slider are 960 * 480, the large slider automatically resizes area to screen height minus header. Please be aware that the focal point of images is within this frame.
 * Recommended size for images used as feature image, which will then also be used for creating thumbnails, is 630*372, 
 otherwhise they will be cropped automatically.
