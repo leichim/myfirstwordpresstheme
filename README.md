@@ -1,6 +1,8 @@
 # MyFirst Wordpress Theme
 This is a public version of my first wordpress theme ever build (which can be obviously seen in the code), and describes my journey of getting into programming and WordPress. Now it is freely available for downloads!
 
+[View demo](https://michieltramper.com/myfirstwordpresstheme/ "My First Wordpress Theme Demo")
+
 ##Theme Includes
 * Fully HTML 5, and CSS3 enhancements for navigation.
 * Responsive for different devices, responsive dropdown menu for resolutions under 640px.
