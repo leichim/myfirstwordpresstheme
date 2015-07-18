@@ -38,7 +38,6 @@ and as thumbnail in archives, category archives, tag archives, author archives, 
 		- other possible classes: two-thirds, two-thirds-last, three-fourth, three-fourth-last. 
 	* Pullquotes [pull class="left"]Quote here[/pull]
 	* [twitter] for displaying twitter following button
-	* [tooltip title="tooltip content"]text that is hovered to show tooltip[/tooltip]
 	
 * Theme Settings page with settings for Analytics and ad management as well: 
 
