@@ -105,3 +105,19 @@ function msign_services_connect_register() {
 		) );
 }
 add_action( 'p2p_init', 'msign_services_connect_register' );
+
+/**
+ * Removes empty paragraphs and linebreaks around shortcodes
+ */
+function remove_empty_tags_around_shortcodes($content) {
+    $tags = array(
+        '<p>[' => '[',
+        ']</p>' => ']',
+        ']<br>' => ']',
+        ']<br />' => ']'
+    );
+ 
+    $content = strtr($content, $tags);
+    return $content;
+} 
+add_filter('the_content', 'remove_empty_tags_around_shortcodes');
