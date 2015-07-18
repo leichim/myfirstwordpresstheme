@@ -52,7 +52,7 @@ otherwhise they will be cropped automatically.
 ##Documentation
 
 ### Making Connections
-If you install the [posts 2 posts plugin](https://wordpress.org/plugins/posts-to-posts/ "Post 2 Posts"), you can add connections. At portfolio projects, you can link
+If you install the [posts 2 posts plugin](https://wordpress.org/plugins/posts-to-posts/ "Post 2 Posts"), you can add connections. At portfolio projects, you can link to services (you can use this to affiliate a certain project with some services) and at pages, posts, services and portfolio projects you can link to custom widgets. 
 
 ### Custom Post Types
 The theme support various custom post types which you can load in the following manner:
