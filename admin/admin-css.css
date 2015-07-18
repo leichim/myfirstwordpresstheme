@@ -1,0 +1,227 @@
+/*
+File Description: CSS used in admin backend
+Author: Michiel Tramper
+Author URI: http://www.m-sign.nl
+*/
+/* Table of Contents */
+/* 1. Custom post icons */
+/* 2. Themesettings panel */
+/* 3. Metaboxes */
+
+/* 1. Custom post icons
+-------------------------------------------------------------- */
+#menu-posts-portfolio_project .wp-menu-image {
+	background: url(../img/adminsprite.png) no-repeat 0 -2px !important;
+}
+#menu-posts-portfolio_project:hover .wp-menu-image, #menu-posts-portfolio_project.wp-has-current-submenu .wp-menu-image {
+	background-position:0 -32px !important;
+}
+#menu-posts-feature .wp-menu-image {
+	background: url(../img/adminsprite.png) no-repeat -30px -2px !important;
+}
+#menu-posts-feature:hover .wp-menu-image, #menu-posts-feature.wp-has-current-submenu .wp-menu-image {
+	background-position:-30px -33px !important;
+}
+#menu-posts-services .wp-menu-image {
+	background: url(../img/adminsprite.png) no-repeat -60px -2px !important;
+}
+#menu-posts-services:hover .wp-menu-image, #menu-posts-services.wp-has-current-submenu .wp-menu-image {
+	background-position:-60px -34px !important;
+}
+#menu-posts-testimonies .wp-menu-image {
+	background: url(../img/adminsprite.png) no-repeat -90px -2px !important;
+}
+#menu-posts-testimonies:hover .wp-menu-image, #menu-posts-testimonies.wp-has-current-submenu .wp-menu-image {
+	background-position:-90px -34px !important;
+}
+#menu-posts-members .wp-menu-image {
+	background: url(../img/adminsprite.png) no-repeat -120px -2px !important;
+}
+#menu-posts-members:hover .wp-menu-image, #menu-posts-members.wp-has-current-submenu .wp-menu-image {
+	background-position:-120px -32px !important;
+}
+#menu-posts-approach .wp-menu-image {
+	background: url(../img/adminsprite.png) no-repeat -150px -2px !important;
+}
+#menu-posts-approach:hover .wp-menu-image, #menu-posts-approach.wp-has-current-submenu .wp-menu-image {
+	background-position:-150px -32px !important;
+}
+#menu-posts-custom-widget .wp-menu-image {
+	background: url(../img/adminsprite.png) no-repeat -184px -2px !important;
+}
+#menu-posts-custom-widget:hover .wp-menu-image, #menu-posts-custom-widget.wp-has-current-submenu .wp-menu-image {
+	background-position:-184px -32px !important;
+}
+/* 2. Themesettings panel
+-------------------------------------------------------------- */
+.wrap.settings {
+	background:#f5f5f5;
+	border:1px solid #ccc;
+	border-radius:7px;
+	box-shadow:0 0 11px #eee;
+	overflow:hidden;
+}
+.header {
+	background:url(../img/pattern-magenta.png) repeat;
+	border-bottom:1px solid #aaa;
+	padding:40px 20px 70px 20px;
+	position:relative;
+}
+.version {
+	background:#fff;
+	border-radius:50%;
+	box-shadow:0 0 11px #aaa inset;
+	color:#111;
+	font-size: 23px;
+	margin-right:11px;
+	padding: 21px 19px 18px 16px;
+}
+.wrap.settings h2.title {
+	color:white;
+	text-shadow:none;
+	font-size: 32px;
+	font-weight:normal;
+}
+.tab-nav {
+	bottom:10px;
+	position:absolute;
+}
+.tab-nav a {
+	background:url(../img/pattern.png) repeat;
+	color: #444;
+	font-size:16px;
+	margin-left:-1px;
+	padding:11px 20px;
+	position:relative;
+	text-decoration:none;
+}
+.tab-nav a.active, .tab-nav a:hover {
+	color: #f1f1f1;
+	background:#202020;
+	padding-top:14px;
+	z-index:999;
+}
+.pointer {
+	display:none;
+}
+.active .pointer {
+	border-top: 15px solid #222;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;	
+	bottom: -15px;
+	display:block;
+	height: 0;
+	left: 14px;
+	position: absolute;
+	width: 0;
+}
+.tabs {
+	overflow:hidden;
+	padding:20px;
+	position:relative;
+}
+.single-tab {
+	filter: alpha(opacity = 0);
+	max-width:600px;
+	opacity:0;
+	overflow:hidden;
+	position:absolute;
+	transition: all 777ms ease-out;
+	-webkit-transition: all 777ms ease-out;
+	z-index:1;
+	zoom:1;
+}
+.single-tab.active {
+	filter: alpha(opacity = 100);
+	opacity:1;
+	position:relative;
+	z-index:99;
+	zoom:1;
+}
+.settings label {
+	display:block;
+	margin:21px 0 3px 0;
+}
+.wrap.settings #message {
+	background:#000;
+	background:rgba(0,0,0,0.8);
+	border:5px solid #ccc;
+	border-radius:7px;
+	color:#fff;
+	height:100px;
+	font-size:18px;
+	left:50%;
+	margin-left: -147px;
+	padding-top:77px;
+	position:fixed;
+	text-align:center;	
+	top:30%;
+	width:300px;
+	z-index:99999;
+}
+.wrap.settings #message p {
+	background: url(../img/sprite.png) no-repeat -400px 0;
+	margin: 0 auto;
+	line-height: 24px;
+	width: 240px;
+}
+	
+/* 3. Metaboxes
+-------------------------------------------------------------- */
+.boxed-fields {
+	background:#eee;
+	border:1px solid #ddd;
+	border-radius:7px;
+	padding:10px;
+}
+.lay-out + label {
+	background:url(../img/adminsprite.png) no-repeat;
+	border:3px solid #bbb;
+	border-radius:3px;
+	display:inline-block;
+	height:47px;
+	margin:0 0 0 -80px;
+	text-indent:-10000px;
+	width:59px;
+}
+.lay-out + label:hover, input.lay-out:checked + label  {
+	border:3px solid #f23183;
+}
+.lay-out.sidebar-left + label {
+	background-position:-75px -71px;
+}
+.lay-out.sidebar-right + label {
+	background-position:-5px -71px;
+}
+.lay-out.one-column + label {
+	background-position:-145px -71px;
+}
+input.lay-out, .form-table input.lay-out {
+	margin:40px 40px 0 40px;
+}
+.boxed-fields .description {
+	margin-left:10px;
+}
+/* 4. Image upload element
+-------------------------------------------------------------- */
+.image-upload {
+	overflow:hidden;
+}
+.image-upload img {
+	background:#eee;
+	border:1px solid #dcdcdc;
+	float:left;
+	height:auto;
+	margin-right:20px;
+	max-width:150px;
+	padding:4px;
+}
+.settings .image-upload img {
+	margin-top:20px;
+}
+.image-upload .input {
+	float:left;
+}
+.settings .image-upload .input {
+	float:right;
+}
