@@ -110,9 +110,9 @@ function msign_widgets_init() {
 add_action( 'widgets_init', 'msign_widgets_init' );
 /**** Featured Posts Widget ****/
 class Featured_Posts extends WP_Widget {
-	function Featured_Posts() {
+	__construct() {
 		$widget_ops = array( 'classname' => 'widget_featured_posts', 'description' => __('This widget displays featured posts from a certain category.', 'msign' ) );
-        $this->WP_Widget( 'featured_posts', __('Featured Posts', 'msign'), $widget_ops);
+        parent::__construct( 'featured_posts', __('Featured Posts', 'msign'), $widget_ops);
 	}
 	function form($instance) {
 		$defaults = array( 'title' => __('Featured', 'msign'));  
@@ -179,9 +179,9 @@ class Featured_Posts extends WP_Widget {
 register_widget('Featured_Posts');
 /**** Recent Posts Widget ****/
 class Recent_Posts extends WP_Widget {
-	function Recent_Posts() {
+	__construct() {
 		$widget_ops = array( 'classname' => 'widget_recent_posts', 'description' => __('This widget displays most recent posts with their thumbnail.', 'msign' ) );
-        $this->WP_Widget( 'recent_posts', __('Recent Posts with Thumbnail', 'msign'), $widget_ops);
+        parent::__construct( 'recent_posts', __('Recent Posts with Thumbnail', 'msign'), $widget_ops);
 	}
 	function form($instance) {
 		$defaults = array( 'title' => __('Recent Posts', 'msign'), 'number' => __('5', 'msign'));  
@@ -231,9 +231,9 @@ class Recent_Posts extends WP_Widget {
 register_widget('Recent_Posts');
 /* Twitter Widget */
 class Twitter_msign extends WP_Widget {
-	function Twitter_msign() {
+	__construct() {
 		$widget_ops = array( 'classname' => 'twitter_msign', 'description' => __( 'This widget displays a standard twitterfeed.', 'msign' ) );
-        $this->WP_Widget( 'twitter_msign', __('M-Sign Twitter Widget', 'msign'), $widget_ops);
+        parent::__construct( 'twitter_msign', __('M-Sign Twitter Widget', 'msign'), $widget_ops);
 	}
 	function form($instance) {
 		/* Defaults for certain fields */
@@ -310,9 +310,9 @@ register_widget('Twitter_msign');
 
 /**** Tabbed Widget ****/
 class Tabbed_Posts extends WP_Widget {
-	function Tabbed_Posts() {
+	__construct() {
 		$widget_ops = array( 'classname' => 'widget_tabbed_posts', 'description' => __('This widget displays the most recent, popular and featured posts in a tabbed style.', 'msign' ) );
-        $this->WP_Widget( 'tabbed_posts', __('Tabbed Widget', 'msign'), $widget_ops);
+        parent::__construct( 'tabbed_posts', __('Tabbed Widget', 'msign'), $widget_ops);
 	}
 	function form($instance) {
 		$defaults = array( 'title' => __('Tabbed Widget', 'msign'), 'number' => __('5', 'msign'));  
