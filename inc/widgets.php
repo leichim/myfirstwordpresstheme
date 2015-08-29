@@ -110,7 +110,7 @@ function msign_widgets_init() {
 add_action( 'widgets_init', 'msign_widgets_init' );
 /**** Featured Posts Widget ****/
 class Featured_Posts extends WP_Widget {
-	__construct() {
+	function __construct() {
 		$widget_ops = array( 'classname' => 'widget_featured_posts', 'description' => __('This widget displays featured posts from a certain category.', 'msign' ) );
         parent::__construct( 'featured_posts', __('Featured Posts', 'msign'), $widget_ops);
 	}
@@ -179,7 +179,7 @@ class Featured_Posts extends WP_Widget {
 register_widget('Featured_Posts');
 /**** Recent Posts Widget ****/
 class Recent_Posts extends WP_Widget {
-	__construct() {
+	function __construct() {
 		$widget_ops = array( 'classname' => 'widget_recent_posts', 'description' => __('This widget displays most recent posts with their thumbnail.', 'msign' ) );
         parent::__construct( 'recent_posts', __('Recent Posts with Thumbnail', 'msign'), $widget_ops);
 	}
@@ -231,7 +231,7 @@ class Recent_Posts extends WP_Widget {
 register_widget('Recent_Posts');
 /* Twitter Widget */
 class Twitter_msign extends WP_Widget {
-	__construct() {
+	function __construct() {
 		$widget_ops = array( 'classname' => 'twitter_msign', 'description' => __( 'This widget displays a standard twitterfeed.', 'msign' ) );
         parent::__construct( 'twitter_msign', __('M-Sign Twitter Widget', 'msign'), $widget_ops);
 	}
@@ -310,7 +310,7 @@ register_widget('Twitter_msign');
 
 /**** Tabbed Widget ****/
 class Tabbed_Posts extends WP_Widget {
-	__construct() {
+	function __construct() {
 		$widget_ops = array( 'classname' => 'widget_tabbed_posts', 'description' => __('This widget displays the most recent, popular and featured posts in a tabbed style.', 'msign' ) );
         parent::__construct( 'tabbed_posts', __('Tabbed Widget', 'msign'), $widget_ops);
 	}
